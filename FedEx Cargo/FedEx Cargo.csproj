@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/yarzardhiyit/Ceazar-FedEx/master/published/</InstallUrl>
-    <UpdateUrl>https://raw.githubusercontent.com/yarzardhiyit/FedEx-Cargo/master/published/</UpdateUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/yarzardhiyit/Ceazar-FedEx/master/published/</UpdateUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <ApplicationRevision>26</ApplicationRevision>
