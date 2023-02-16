@@ -153,19 +153,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BillingFedExHev.cs" />
+    <Compile Include="BillingFedExHev.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BillingFedExHev.Designer.cs">
       <DependentUpon>BillingFedExHev.cs</DependentUpon>
     </Compile>
-    <Compile Include="FdxIP.cs" />
+    <Compile Include="FdxIP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="FdxIP.Designer.cs">
       <DependentUpon>FdxIP.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmZone.cs" />
+    <Compile Include="frmZone.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmZone.Designer.cs">
       <DependentUpon>frmZone.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAuth.cs" />
+    <Compile Include="frmAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmAuth.Designer.cs">
       <DependentUpon>frmAuth.cs</DependentUpon>
     </Compile>
@@ -177,23 +185,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UcIntro.cs" />
+    <Compile Include="UcIntro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UcIntro.Designer.cs">
       <DependentUpon>UcIntro.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcDiam.cs" />
+    <Compile Include="UcDiam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UcDiam.Designer.cs">
       <DependentUpon>UcDiam.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcSpotRate.cs" />
+    <Compile Include="UcSpotRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UcSpotRate.Designer.cs">
       <DependentUpon>UcSpotRate.cs</DependentUpon>
     </Compile>
-    <Compile Include="FdxGround.cs" />
+    <Compile Include="FdxGround.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="FdxGround.Designer.cs">
       <DependentUpon>FdxGround.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcRead.cs" />
+    <Compile Include="UcRead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UcRead.Designer.cs">
       <DependentUpon>UcRead.cs</DependentUpon>
     </Compile>
