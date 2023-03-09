@@ -116,5 +116,10 @@ namespace FedEx_Cargo
                 IpHappy();
             }
         }
+
+        private void btnFuel_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.fedex.com/en-th/shipping/surcharges.html");
+        }
     }
 }

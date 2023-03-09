@@ -78,6 +78,7 @@ namespace FedEx_Cargo
             this.btnFuel.Size = new System.Drawing.Size(40, 39);
             this.btnFuel.TabIndex = 20;
             this.btnFuel.UseVisualStyleBackColor = true;
+            this.btnFuel.Click += new System.EventHandler(this.btnFuel_Click);
             // 
             // lblDefault
             // 

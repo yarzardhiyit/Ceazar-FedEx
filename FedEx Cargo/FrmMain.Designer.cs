@@ -48,13 +48,13 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainUI = new System.Windows.Forms.GroupBox();
-            this.lblCopyRight = new System.Windows.Forms.Label();
+            this.ucDiam2 = new FedEx_Cargo.UcDiam();
+            this.ucIntro3 = new FedEx_Cargo.UcIntro();
             this.fdxHappy2 = new FedEx_Cargo.FdxHappy();
             this.fdxGround3 = new FedEx_Cargo.FdxGround();
             this.fdxIP2 = new FedEx_Cargo.FdxIP();
             this.ucSpotRate2 = new FedEx_Cargo.UcSpotRate();
-            this.ucDiam2 = new FedEx_Cargo.UcDiam();
-            this.ucIntro3 = new FedEx_Cargo.UcIntro();
+            this.lblCopyRight = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.MainUI.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +70,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -80,7 +80,7 @@
             this.exitToolStripMenuItem,
             this.exitToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
@@ -103,7 +103,7 @@
             this.fedExHeavyWeightToolStripMenuItem,
             this.fDXLightWeightToolStripMenuItem});
             this.manageBillingToolStripMenuItem.Name = "manageBillingToolStripMenuItem";
-            this.manageBillingToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
+            this.manageBillingToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
             this.manageBillingToolStripMenuItem.Text = "Manage Billing";
             // 
             // fedExHeavyWeightToolStripMenuItem
@@ -129,7 +129,7 @@
             this.uPSExpressSaverToolStripMenuItem,
             this.disputeInvoiceToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // diamensionToolStripMenuItem
@@ -193,7 +193,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutUSToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutUSToolStripMenuItem
@@ -222,15 +222,21 @@
             this.MainUI.TabIndex = 1;
             this.MainUI.TabStop = false;
             // 
-            // lblCopyRight
+            // ucDiam2
             // 
-            this.lblCopyRight.AutoSize = true;
-            this.lblCopyRight.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCopyRight.Location = new System.Drawing.Point(472, 368);
-            this.lblCopyRight.Name = "lblCopyRight";
-            this.lblCopyRight.Size = new System.Drawing.Size(264, 30);
-            this.lblCopyRight.TabIndex = 2;
-            this.lblCopyRight.Text = "Ceazar Calculator\r\n© 2022 Ceazar Millenium | All rights reserved.";
+            this.ucDiam2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ucDiam2.Location = new System.Drawing.Point(0, 2);
+            this.ucDiam2.Name = "ucDiam2";
+            this.ucDiam2.Size = new System.Drawing.Size(774, 405);
+            this.ucDiam2.TabIndex = 2;
+            // 
+            // ucIntro3
+            // 
+            this.ucIntro3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ucIntro3.Location = new System.Drawing.Point(0, 2);
+            this.ucIntro3.Name = "ucIntro3";
+            this.ucIntro3.Size = new System.Drawing.Size(774, 405);
+            this.ucIntro3.TabIndex = 8;
             // 
             // fdxHappy2
             // 
@@ -268,21 +274,15 @@
             this.ucSpotRate2.Size = new System.Drawing.Size(773, 405);
             this.ucSpotRate2.TabIndex = 4;
             // 
-            // ucDiam2
+            // lblCopyRight
             // 
-            this.ucDiam2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ucDiam2.Location = new System.Drawing.Point(0, 2);
-            this.ucDiam2.Name = "ucDiam2";
-            this.ucDiam2.Size = new System.Drawing.Size(774, 405);
-            this.ucDiam2.TabIndex = 2;
-            // 
-            // ucIntro3
-            // 
-            this.ucIntro3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ucIntro3.Location = new System.Drawing.Point(0, 2);
-            this.ucIntro3.Name = "ucIntro3";
-            this.ucIntro3.Size = new System.Drawing.Size(774, 405);
-            this.ucIntro3.TabIndex = 8;
+            this.lblCopyRight.AutoSize = true;
+            this.lblCopyRight.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyRight.Location = new System.Drawing.Point(472, 368);
+            this.lblCopyRight.Name = "lblCopyRight";
+            this.lblCopyRight.Size = new System.Drawing.Size(264, 30);
+            this.lblCopyRight.TabIndex = 2;
+            this.lblCopyRight.Text = "Ceazar Calculator\r\n© 2022 Ceazar Millenium | All rights reserved.";
             // 
             // FrmMain
             // 
@@ -299,7 +299,7 @@
             this.MaximumSize = new System.Drawing.Size(818, 495);
             this.MinimumSize = new System.Drawing.Size(818, 495);
             this.Name = "FrmMain";
-            this.Text = "Ceazar Calculator";
+            this.Text = "CeazarPay v1.0.0.32";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
