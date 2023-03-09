@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FedEx_Cargo
@@ -20,37 +13,39 @@ namespace FedEx_Cargo
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            SetActivePanel(ucIntro1);
+            SetActivePanel(ucIntro3);
         }
 
         public void SetActivePanel(UserControl control)
         {
-            ucIntro1.Visible = false;
-            ucSpotRate1.Visible = false;
-            FdxGround1.Visible = false;
-            fdxIP1.Visible= false;
+            ucIntro3.Visible = false;
+            ucDiam2.Visible = false;
+            ucSpotRate2.Visible = false;
+            fdxGround3.Visible = false;
+            fdxIP2.Visible = false;
+            fdxHappy2.Visible = false;
 
             control.Visible = true;
         }
 
         private void aboutUSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("App: Ceazar Cargo \nVersion: 1.0.0.27 \nDeveloped By: yarzardhiyit");
+            MessageBox.Show("App: Ceazar Cargo \nVersion: 1.0.0.28 \nDeveloped By: yarzardhiyit");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SetActivePanel(ucIntro1);
+            SetActivePanel(ucIntro3);
         }
 
         private void diamensionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SetActivePanel(ucDiam1);
+            SetActivePanel(ucDiam2);
         }
 
         private void spotRatePricingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SetActivePanel(ucSpotRate1);
+            SetActivePanel(ucSpotRate2);
         }
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -65,7 +60,7 @@ namespace FedEx_Cargo
 
         private void disputeInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SetActivePanel(FdxGround1);
+            SetActivePanel(fdxGround3);
         }
 
         private void fedExHeavyWeightToolStripMenuItem_Click(object sender, EventArgs e)
@@ -74,11 +69,18 @@ namespace FedEx_Cargo
             frmFdxHev.Show();
         }
 
-        private void fedExExpressToolStripMenuItem_Click(object sender, EventArgs e)
+        private void regularRateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SetActivePanel(fdxIP1);
-            FdxIP frmFdxIP= new FdxIP();
+            SetActivePanel(fdxIP2);
+            FdxIP frmFdxIP = new FdxIP();
             frmFdxIP.Show();
+        }
+
+        private void lastMinuteRateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(fdxHappy2);
+            FdxHappy fdxHappy = new FdxHappy();
+            fdxHappy.Show();
         }
     }
 }

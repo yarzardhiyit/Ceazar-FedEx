@@ -40,18 +40,21 @@
             this.diamensionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spotRatePricingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fedExExpressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regularRateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lastMinuteRateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dHLExpressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uPSExpressSaverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disputeInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainUI = new System.Windows.Forms.GroupBox();
-            this.fdxIP1 = new FedEx_Cargo.FdxIP();
             this.lblCopyRight = new System.Windows.Forms.Label();
-            this.FdxGround1 = new FedEx_Cargo.FdxGround();
-            this.ucSpotRate1 = new FedEx_Cargo.UcSpotRate();
-            this.ucDiam1 = new FedEx_Cargo.UcDiam();
-            this.ucIntro1 = new FedEx_Cargo.UcIntro();
+            this.fdxHappy2 = new FedEx_Cargo.FdxHappy();
+            this.fdxGround3 = new FedEx_Cargo.FdxGround();
+            this.fdxIP2 = new FedEx_Cargo.FdxIP();
+            this.ucSpotRate2 = new FedEx_Cargo.UcSpotRate();
+            this.ucDiam2 = new FedEx_Cargo.UcDiam();
+            this.ucIntro3 = new FedEx_Cargo.UcIntro();
             this.menuStrip1.SuspendLayout();
             this.MainUI.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +70,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,7 +80,7 @@
             this.exitToolStripMenuItem,
             this.exitToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
@@ -100,7 +103,7 @@
             this.fedExHeavyWeightToolStripMenuItem,
             this.fDXLightWeightToolStripMenuItem});
             this.manageBillingToolStripMenuItem.Name = "manageBillingToolStripMenuItem";
-            this.manageBillingToolStripMenuItem.Size = new System.Drawing.Size(123, 24);
+            this.manageBillingToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
             this.manageBillingToolStripMenuItem.Text = "Manage Billing";
             // 
             // fedExHeavyWeightToolStripMenuItem
@@ -126,7 +129,7 @@
             this.uPSExpressSaverToolStripMenuItem,
             this.disputeInvoiceToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // diamensionToolStripMenuItem
@@ -145,10 +148,26 @@
             // 
             // fedExExpressToolStripMenuItem
             // 
+            this.fedExExpressToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regularRateToolStripMenuItem,
+            this.lastMinuteRateToolStripMenuItem});
             this.fedExExpressToolStripMenuItem.Name = "fedExExpressToolStripMenuItem";
             this.fedExExpressToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.fedExExpressToolStripMenuItem.Text = "FedEx Express";
-            this.fedExExpressToolStripMenuItem.Click += new System.EventHandler(this.fedExExpressToolStripMenuItem_Click);
+            // 
+            // regularRateToolStripMenuItem
+            // 
+            this.regularRateToolStripMenuItem.Name = "regularRateToolStripMenuItem";
+            this.regularRateToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.regularRateToolStripMenuItem.Text = "Regular Rate";
+            this.regularRateToolStripMenuItem.Click += new System.EventHandler(this.regularRateToolStripMenuItem_Click);
+            // 
+            // lastMinuteRateToolStripMenuItem
+            // 
+            this.lastMinuteRateToolStripMenuItem.Name = "lastMinuteRateToolStripMenuItem";
+            this.lastMinuteRateToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.lastMinuteRateToolStripMenuItem.Text = "Last-Minute Rate";
+            this.lastMinuteRateToolStripMenuItem.Click += new System.EventHandler(this.lastMinuteRateToolStripMenuItem_Click);
             // 
             // dHLExpressToolStripMenuItem
             // 
@@ -174,7 +193,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutUSToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutUSToolStripMenuItem
@@ -189,12 +208,12 @@
             this.MainUI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MainUI.Controls.Add(this.fdxIP1);
-            this.MainUI.Controls.Add(this.lblCopyRight);
-            this.MainUI.Controls.Add(this.FdxGround1);
-            this.MainUI.Controls.Add(this.ucSpotRate1);
-            this.MainUI.Controls.Add(this.ucDiam1);
-            this.MainUI.Controls.Add(this.ucIntro1);
+            this.MainUI.Controls.Add(this.ucDiam2);
+            this.MainUI.Controls.Add(this.ucIntro3);
+            this.MainUI.Controls.Add(this.fdxHappy2);
+            this.MainUI.Controls.Add(this.fdxGround3);
+            this.MainUI.Controls.Add(this.fdxIP2);
+            this.MainUI.Controls.Add(this.ucSpotRate2);
             this.MainUI.Location = new System.Drawing.Point(12, 31);
             this.MainUI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MainUI.Name = "MainUI";
@@ -202,15 +221,6 @@
             this.MainUI.Size = new System.Drawing.Size(776, 407);
             this.MainUI.TabIndex = 1;
             this.MainUI.TabStop = false;
-            // 
-            // fdxIP1
-            // 
-            this.fdxIP1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.fdxIP1.Location = new System.Drawing.Point(0, 6);
-            this.fdxIP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.fdxIP1.Name = "fdxIP1";
-            this.fdxIP1.Size = new System.Drawing.Size(776, 405);
-            this.fdxIP1.TabIndex = 4;
             // 
             // lblCopyRight
             // 
@@ -222,41 +232,57 @@
             this.lblCopyRight.TabIndex = 2;
             this.lblCopyRight.Text = "Ceazar Calculator\r\n© 2022 Ceazar Millenium | All rights reserved.";
             // 
-            // FdxGround1
+            // fdxHappy2
             // 
-            this.FdxGround1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.FdxGround1.Location = new System.Drawing.Point(0, 6);
-            this.FdxGround1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.FdxGround1.Name = "FdxGround1";
-            this.FdxGround1.Size = new System.Drawing.Size(776, 392);
-            this.FdxGround1.TabIndex = 2;
+            this.fdxHappy2.BackColor = System.Drawing.Color.Transparent;
+            this.fdxHappy2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fdxHappy2.BackgroundImage")));
+            this.fdxHappy2.Location = new System.Drawing.Point(0, 2);
+            this.fdxHappy2.Name = "fdxHappy2";
+            this.fdxHappy2.Size = new System.Drawing.Size(773, 405);
+            this.fdxHappy2.TabIndex = 7;
             // 
-            // ucSpotRate1
+            // fdxGround3
             // 
-            this.ucSpotRate1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ucSpotRate1.Location = new System.Drawing.Point(0, 15);
-            this.ucSpotRate1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucSpotRate1.Name = "ucSpotRate1";
-            this.ucSpotRate1.Size = new System.Drawing.Size(774, 405);
-            this.ucSpotRate1.TabIndex = 3;
+            this.fdxGround3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.fdxGround3.Location = new System.Drawing.Point(1, 2);
+            this.fdxGround3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.fdxGround3.Name = "fdxGround3";
+            this.fdxGround3.Size = new System.Drawing.Size(773, 405);
+            this.fdxGround3.TabIndex = 5;
             // 
-            // ucDiam1
+            // fdxIP2
             // 
-            this.ucDiam1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ucDiam1.Location = new System.Drawing.Point(5, 15);
-            this.ucDiam1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucDiam1.Name = "ucDiam1";
-            this.ucDiam1.Size = new System.Drawing.Size(764, 386);
-            this.ucDiam1.TabIndex = 1;
+            this.fdxIP2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.fdxIP2.Location = new System.Drawing.Point(0, -1);
+            this.fdxIP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.fdxIP2.Name = "fdxIP2";
+            this.fdxIP2.Size = new System.Drawing.Size(773, 405);
+            this.fdxIP2.TabIndex = 6;
             // 
-            // ucIntro1
+            // ucSpotRate2
             // 
-            this.ucIntro1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ucIntro1.Location = new System.Drawing.Point(5, 15);
-            this.ucIntro1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIntro1.Name = "ucIntro1";
-            this.ucIntro1.Size = new System.Drawing.Size(764, 385);
-            this.ucIntro1.TabIndex = 0;
+            this.ucSpotRate2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ucSpotRate2.Location = new System.Drawing.Point(0, 2);
+            this.ucSpotRate2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucSpotRate2.Name = "ucSpotRate2";
+            this.ucSpotRate2.Size = new System.Drawing.Size(773, 405);
+            this.ucSpotRate2.TabIndex = 4;
+            // 
+            // ucDiam2
+            // 
+            this.ucDiam2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ucDiam2.Location = new System.Drawing.Point(0, 2);
+            this.ucDiam2.Name = "ucDiam2";
+            this.ucDiam2.Size = new System.Drawing.Size(774, 405);
+            this.ucDiam2.TabIndex = 2;
+            // 
+            // ucIntro3
+            // 
+            this.ucIntro3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ucIntro3.Location = new System.Drawing.Point(0, 2);
+            this.ucIntro3.Name = "ucIntro3";
+            this.ucIntro3.Size = new System.Drawing.Size(774, 405);
+            this.ucIntro3.TabIndex = 8;
             // 
             // FrmMain
             // 
@@ -279,7 +305,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.MainUI.ResumeLayout(false);
-            this.MainUI.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,6 +335,14 @@
         private System.Windows.Forms.ToolStripMenuItem fedExHeavyWeightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fDXLightWeightToolStripMenuItem;
         private FdxIP fdxIP1;
+        private System.Windows.Forms.ToolStripMenuItem regularRateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lastMinuteRateToolStripMenuItem;
+        private UcDiam ucDiam2;
+        private UcSpotRate ucSpotRate2;
+        private FdxGround fdxGround3;
+        private FdxIP fdxIP2;
+        private FdxHappy fdxHappy2;
+        private UcIntro ucIntro3;
     }
 }
 

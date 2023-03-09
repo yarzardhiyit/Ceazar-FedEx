@@ -51,6 +51,7 @@ namespace FedEx_Cargo
                 case 0:
                     WB = WB * 782;
                     Disc = WB * 71.03 / 100;
+                    //Disc = WB * 76.52174 / 100; Happy Hour!
                     txtDiscount.Text = Disc.ToString();
                     WB = WB - Disc;
                     
