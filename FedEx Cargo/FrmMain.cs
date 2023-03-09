@@ -26,7 +26,6 @@ namespace FedEx_Cargo
         public void SetActivePanel(UserControl control)
         {
             ucIntro1.Visible = false;
-            ucDiam1.Visible = false;
             ucSpotRate1.Visible = false;
             FdxGround1.Visible = false;
             fdxIP1.Visible= false;
