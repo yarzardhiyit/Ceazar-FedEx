@@ -42,19 +42,21 @@
             this.fedExExpressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regularRateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lastMinuteRateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fedExLightweightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dHLExpressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uPSExpressSaverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disputeInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainUI = new System.Windows.Forms.GroupBox();
+            this.lblCopyRight = new System.Windows.Forms.Label();
+            this.light_weight1 = new FedEx_Cargo.Light_weight();
             this.ucDiam2 = new FedEx_Cargo.UcDiam();
             this.ucIntro3 = new FedEx_Cargo.UcIntro();
             this.fdxHappy2 = new FedEx_Cargo.FdxHappy();
             this.fdxGround3 = new FedEx_Cargo.FdxGround();
             this.fdxIP2 = new FedEx_Cargo.FdxIP();
             this.ucSpotRate2 = new FedEx_Cargo.UcSpotRate();
-            this.lblCopyRight = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.MainUI.SuspendLayout();
             this.SuspendLayout();
@@ -135,14 +137,14 @@
             // diamensionToolStripMenuItem
             // 
             this.diamensionToolStripMenuItem.Name = "diamensionToolStripMenuItem";
-            this.diamensionToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.diamensionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.diamensionToolStripMenuItem.Text = "Diamension";
             this.diamensionToolStripMenuItem.Click += new System.EventHandler(this.diamensionToolStripMenuItem_Click);
             // 
             // spotRatePricingToolStripMenuItem
             // 
             this.spotRatePricingToolStripMenuItem.Name = "spotRatePricingToolStripMenuItem";
-            this.spotRatePricingToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.spotRatePricingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.spotRatePricingToolStripMenuItem.Text = "Spot Rate Pricing";
             this.spotRatePricingToolStripMenuItem.Click += new System.EventHandler(this.spotRatePricingToolStripMenuItem_Click);
             // 
@@ -150,41 +152,49 @@
             // 
             this.fedExExpressToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.regularRateToolStripMenuItem,
-            this.lastMinuteRateToolStripMenuItem});
+            this.lastMinuteRateToolStripMenuItem,
+            this.fedExLightweightToolStripMenuItem});
             this.fedExExpressToolStripMenuItem.Name = "fedExExpressToolStripMenuItem";
-            this.fedExExpressToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.fedExExpressToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fedExExpressToolStripMenuItem.Text = "FedEx Express";
             // 
             // regularRateToolStripMenuItem
             // 
             this.regularRateToolStripMenuItem.Name = "regularRateToolStripMenuItem";
-            this.regularRateToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.regularRateToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.regularRateToolStripMenuItem.Text = "Regular Rate";
             this.regularRateToolStripMenuItem.Click += new System.EventHandler(this.regularRateToolStripMenuItem_Click);
             // 
             // lastMinuteRateToolStripMenuItem
             // 
             this.lastMinuteRateToolStripMenuItem.Name = "lastMinuteRateToolStripMenuItem";
-            this.lastMinuteRateToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.lastMinuteRateToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lastMinuteRateToolStripMenuItem.Text = "Last-Minute Rate";
             this.lastMinuteRateToolStripMenuItem.Click += new System.EventHandler(this.lastMinuteRateToolStripMenuItem_Click);
+            // 
+            // fedExLightweightToolStripMenuItem
+            // 
+            this.fedExLightweightToolStripMenuItem.Name = "fedExLightweightToolStripMenuItem";
+            this.fedExLightweightToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fedExLightweightToolStripMenuItem.Text = "FDX Light_weight";
+            this.fedExLightweightToolStripMenuItem.Click += new System.EventHandler(this.fedExLightweightToolStripMenuItem_Click);
             // 
             // dHLExpressToolStripMenuItem
             // 
             this.dHLExpressToolStripMenuItem.Name = "dHLExpressToolStripMenuItem";
-            this.dHLExpressToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.dHLExpressToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dHLExpressToolStripMenuItem.Text = "DHL Express";
             // 
             // uPSExpressSaverToolStripMenuItem
             // 
             this.uPSExpressSaverToolStripMenuItem.Name = "uPSExpressSaverToolStripMenuItem";
-            this.uPSExpressSaverToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.uPSExpressSaverToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.uPSExpressSaverToolStripMenuItem.Text = "UPS Express Saver";
             // 
             // disputeInvoiceToolStripMenuItem
             // 
             this.disputeInvoiceToolStripMenuItem.Name = "disputeInvoiceToolStripMenuItem";
-            this.disputeInvoiceToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
+            this.disputeInvoiceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.disputeInvoiceToolStripMenuItem.Text = "FDX Ground";
             this.disputeInvoiceToolStripMenuItem.Click += new System.EventHandler(this.disputeInvoiceToolStripMenuItem_Click);
             // 
@@ -208,6 +218,7 @@
             this.MainUI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.MainUI.Controls.Add(this.light_weight1);
             this.MainUI.Controls.Add(this.ucDiam2);
             this.MainUI.Controls.Add(this.ucIntro3);
             this.MainUI.Controls.Add(this.fdxHappy2);
@@ -221,6 +232,25 @@
             this.MainUI.Size = new System.Drawing.Size(776, 407);
             this.MainUI.TabIndex = 1;
             this.MainUI.TabStop = false;
+            // 
+            // lblCopyRight
+            // 
+            this.lblCopyRight.AutoSize = true;
+            this.lblCopyRight.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCopyRight.Location = new System.Drawing.Point(472, 368);
+            this.lblCopyRight.Name = "lblCopyRight";
+            this.lblCopyRight.Size = new System.Drawing.Size(264, 30);
+            this.lblCopyRight.TabIndex = 2;
+            this.lblCopyRight.Text = "Ceazar Calculator\r\n© 2022 Ceazar Millenium | All rights reserved.";
+            // 
+            // light_weight1
+            // 
+            this.light_weight1.BackColor = System.Drawing.Color.Transparent;
+            this.light_weight1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("light_weight1.BackgroundImage")));
+            this.light_weight1.Location = new System.Drawing.Point(0, 2);
+            this.light_weight1.Name = "light_weight1";
+            this.light_weight1.Size = new System.Drawing.Size(773, 405);
+            this.light_weight1.TabIndex = 9;
             // 
             // ucDiam2
             // 
@@ -274,16 +304,6 @@
             this.ucSpotRate2.Size = new System.Drawing.Size(773, 405);
             this.ucSpotRate2.TabIndex = 4;
             // 
-            // lblCopyRight
-            // 
-            this.lblCopyRight.AutoSize = true;
-            this.lblCopyRight.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCopyRight.Location = new System.Drawing.Point(472, 368);
-            this.lblCopyRight.Name = "lblCopyRight";
-            this.lblCopyRight.Size = new System.Drawing.Size(264, 30);
-            this.lblCopyRight.TabIndex = 2;
-            this.lblCopyRight.Text = "Ceazar Calculator\r\n© 2022 Ceazar Millenium | All rights reserved.";
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -299,7 +319,7 @@
             this.MaximumSize = new System.Drawing.Size(818, 495);
             this.MinimumSize = new System.Drawing.Size(818, 495);
             this.Name = "FrmMain";
-            this.Text = "CeazarPay v1.0.0.32";
+            this.Text = "CeazarPay v1.0.0.34";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -343,6 +363,8 @@
         private FdxIP fdxIP2;
         private FdxHappy fdxHappy2;
         private UcIntro ucIntro3;
+        private System.Windows.Forms.ToolStripMenuItem fedExLightweightToolStripMenuItem;
+        private Light_weight light_weight1;
     }
 }
 

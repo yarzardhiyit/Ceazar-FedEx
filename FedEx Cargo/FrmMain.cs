@@ -24,13 +24,14 @@ namespace FedEx_Cargo
             fdxGround3.Visible = false;
             fdxIP2.Visible = false;
             fdxHappy2.Visible = false;
+            light_weight1.Visible = false;
 
             control.Visible = true;
         }
 
         private void aboutUSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("App: CeazarPay \nVersion: 1.0.0.32 \nDeveloped By: yarzardhiyit");
+            MessageBox.Show("App: CeazarPay \nVersion: 1.0.0.34 \nDeveloped By: yarzardhiyit");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -81,6 +82,13 @@ namespace FedEx_Cargo
             SetActivePanel(fdxHappy2);
             FdxHappy fdxHappy = new FdxHappy();
             fdxHappy.Show();
+        }
+
+        private void fedExLightweightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetActivePanel(light_weight1);
+            Light_weight fdxLightweight = new Light_weight();
+            fdxLightweight.Show();  
         }
     }
 }
